@@ -1,0 +1,36 @@
+/*HEADER*/
+header{
+    background-color: $primary-color;
+    padding: $padding;
+    display: flex;
+    justify-content:space-between;
+    height: $header_size;
+
+    .logo{
+        a{
+            img{
+                width: 150px;
+            }
+        }
+    }
+    nav{
+        ul{
+    
+            li{
+                display: inline-block;
+                a{
+                    display: block;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: $font-color;
+                    margin-right: 30px;
+                    line-height: 2.5;
+                    
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

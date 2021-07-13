@@ -1,0 +1,42 @@
+@import "../mixin/mixin";
+@include google-font('Zen + Loop');
+
+main{
+    padding:$padding;
+    h2{
+        text-align: center;
+    }
+    .service-box{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        flex-wrap: wrap;
+        padding: 20px 0;
+        .service-items{
+            flex-basis: 330px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color: #ddd;
+            position: relative;
+            @include transition(.5s);
+
+
+            h3{
+                font-size: 20px;
+                text-transform: capitalize;
+                text-align: center;
+            }
+            p{
+                padding: 20px 0;
+                text-align: center;
+            }
+            a{
+                @include btn;
+            }
+            &:hover{
+                @include transform(rotate(360deg)); 
+            }
+        } 
+
+    }
+}

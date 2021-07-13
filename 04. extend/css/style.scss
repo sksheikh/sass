@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+@mixin box{
+   background-color: blueviolet;
+   color: #fff;
+   padding: 20px;
+   flex-basis: 380px;
+
+}
+.btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: blue;
+    color: #fff;
+    padding: 10px 20px;
+}
+.btn-violet{
+    @extend .btn;
+    background: violet;
+}
+.btn-red{
+    @extend .btn;
+    background-color: red;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    
+    .box-content{
+        @include box;
+        h2{}
+        p{
+            padding: 20px 0;
+        }
+        a{}
+    }
+}

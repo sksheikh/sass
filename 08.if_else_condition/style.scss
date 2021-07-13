@@ -1,0 +1,16 @@
+@mixin profile($size, $circle:false, $square:false) {
+    width: $size;
+    height: $size;
+
+    @if($square==true){
+        border-radius:20px ;
+    }@else if($circle==true){
+        border-radius: $size/2;
+    }@else{
+        border-radius: 0;
+    }
+}
+
+.profile{
+    @include profile(100px);
+}

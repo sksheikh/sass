@@ -1,0 +1,63 @@
+// For loop
+// @for variable from <start> through <end> { 
+//     statement;
+//    }
+
+// @for $i from 1 through 10{
+//     .width-#{$i}{
+//       width : 100px*$i;    }
+// }
+
+// @for $i from 1 through 5{
+//     .pt-#{$i}{
+//         padding-top:10px*$i;
+//     }
+//     .pb-#{$i}{
+//         padding-bottom:10px*$i;
+//     }
+    
+// }
+
+
+
+// @each statement
+
+// @each variable in (list or map){
+//     statement;
+// }
+
+// @each $i in (uppercase,lowercase,capitalize){
+//     .text-#{$i}{
+//         text-transform: $i;
+//     }
+// }
+
+// $list : uppercase, lowercase, capitalize;
+// @each $i in $list{
+//     .text-#{$i}{
+//         text-transform: $i;
+//     }
+// }
+
+// $list :(h1, 50px, 40px, 900), (h2, 35px, 30px, 600 ) ;
+// @each $name,$font-size, $line-height, $font-weight in $list{
+//     #{$name}{
+//         font-size: $font-size;
+//         line-height: $line-height;
+//         font-weight: $font-weight;
+//     }
+// }
+
+
+//Map
+
+// $map: (primary:#ff00cc, success:#ffcc00);
+
+// @each $name, $color in $map{
+//     .btn-#{$name}{
+//         background-color: $color;
+//         display: inline-block;
+//         color: #fff;
+//         border: 1px solid $color;
+//     }
+// }
