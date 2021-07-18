@@ -1,0 +1,47 @@
+@mixin google-font($font){
+    $font : unquote($font);
+    @import url(https://fonts.googleapis.com/css2?family=#{$font});
+}
+
+@mixin btn{
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid $btn-color;
+    padding: 10px 25px;
+    background-color: $btn-color;
+    color:#fff;
+    text-transform: uppercase;
+    @include transition(.3s);
+    &:hover{
+            background-color: $btn-hover;
+            border-color: $btn-hover;
+            
+    }
+}
+
+
+@mixin footer-btn{
+    @include btn;
+    background-color: green;
+    
+}
+
+@mixin bordered($width: 1px,$style:solid,$color:$btn-color){
+    border: $width $style $color;
+}
+@mixin transition($property){
+    transition: $property;
+    -webkit-transition: $property;
+    -moz-transition: $property;
+    -ms-transition: $property;
+    -o-transition: $property;
+}
+
+@mixin transform($property){
+    transform:$property ;
+    -webkit-transform:$property ;
+    -moz-transform:$property ;
+    -ms-transform:$property ;
+    -o-transform:$property ;
+}

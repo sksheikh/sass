@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+.btn, .btn-red, .btn-violet {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: blue;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.btn-violet {
+  background: violet;
+}
+
+.btn-red {
+  background-color: red;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+.box .box-content {
+  background-color: blueviolet;
+  color: #fff;
+  padding: 20px;
+  flex-basis: 380px;
+}
+.box .box-content p {
+  padding: 20px 0;
+}/*# sourceMappingURL=style.css.map */

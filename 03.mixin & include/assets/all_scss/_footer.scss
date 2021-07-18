@@ -1,0 +1,48 @@
+footer{
+    background-color: #222;
+    padding: $padding;
+    height: $footer_size;
+    .about{
+        display: flex;
+        justify-content: space-between;
+        .about-text{
+            flex-basis: 700px;
+            h4{
+                color: #fff;
+                font-size: 24px;
+                margin-bottom: 5px;
+            }
+            p{
+               color: #fff;
+               padding: 20px 0; 
+            }
+            a{
+                @include footer-btn;
+                @include bordered($width:1px,$color:green);
+            }
+        }
+        .about-menu{
+            ul{
+                list-style: none;
+                li{
+                    display: block;
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    hr{
+        margin: 10px 0;
+    }
+    .copy-right{
+        span{
+            color: #f0f0f0;
+            text-align: center;
+            display: block;
+            margin-top: 30px;
+        }
+    }
+}

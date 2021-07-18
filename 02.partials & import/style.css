@@ -1,0 +1,152 @@
+/*COLOR*/
+/*FONT FAMILY*/
+/*SIZE*/
+/*PADDING*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Festive", cursive;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  /*HEADER*/
+  /*HEADER*/
+  /*BANNER*/
+  /*MAIN*/
+  /*FOOTER*/
+}
+.container header {
+  background-color: #00ffff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+}
+.container header .logo a img {
+  width: 150px;
+}
+.container header nav ul li {
+  display: inline-block;
+}
+.container header nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: #333;
+  background-color: #d35400;
+  margin-right: 30px;
+  border-radius: 5px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.container header nav ul li a:hover {
+  background-color: #d35400;
+}
+.container header nav ul li a:last-child {
+  margin-right: 0;
+}
+.container .banner {
+  background-image: url("img/oxyzen_Bank_kaarigar.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  background-color: #333;
+}
+.container main {
+  padding: 20px 40px;
+}
+.container main h2 {
+  text-align: center;
+}
+.container main .service-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+.container main .service-box .service-items {
+  flex-basis: 330px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #ddd;
+}
+.container main .service-box .service-items h3 {
+  font-size: 20px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.container main .service-box .service-items p {
+  padding: 20px 0;
+  text-align: center;
+}
+.container main .service-box .service-items a {
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #d35400;
+  padding: 10px 25px;
+  background-color: #d35400;
+  color: #fff;
+  text-transform: capitalize;
+}
+.container main .service-box .service-items a:hover {
+  background-color: #d35400;
+  border-color: #d35400;
+}
+.container footer {
+  background-color: #222;
+  padding: 20px 40px;
+  height: 200px;
+}
+.container footer .about {
+  display: flex;
+  justify-content: space-between;
+}
+.container footer .about .about-text {
+  flex-basis: 700px;
+}
+.container footer .about .about-text h4 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.container footer .about .about-text p {
+  color: #fff;
+}
+.container footer .about .about-menu ul {
+  list-style: none;
+}
+.container footer .about .about-menu ul li {
+  display: block;
+}
+.container footer .about .about-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.container footer hr {
+  margin: 10px 0;
+}
+.container footer .copy-right span {
+  color: #f0f0f0;
+  text-align: center;
+  display: block;
+  margin-top: 30px;
+}/*# sourceMappingURL=style.css.map */

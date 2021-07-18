@@ -1,0 +1,14 @@
+.container{
+    max-width: $width;
+    margin: 0 auto;
+    padding: 0 40px;
+/*HEADER*/
+ @import "header";
+ /*BANNER*/
+ @import "banner";
+ 
+ /*MAIN*/
+ @import "main";
+ /*FOOTER*/
+ @import "footer";
+ }
